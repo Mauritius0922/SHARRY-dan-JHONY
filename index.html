@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undangan Sary & Jhony</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="book">
+        <!-- Halaman 1 -->
+        <div class="page active" id="page1">
+            <img src="assets/img/anjaay.jpg" alt="Sary & Jhony" class="full-page">
+            <h1 class="animated-text">THE WEDDING SARY & JHONY <br> 15 | 02 | 2025</h1>
+            <button onclick="nextPage()">Lanjut</button>
+        </div>
+
+        <!-- Halaman 2 -->
+        <div class="page" id="page2">
+            <h1 class="animated-title">SALAM SEJAHTERA</h1>
+            <p>"Tuhan membuat segala sesuatu indah pada waktuNya, Indah saat dia mempertemukan, 
+                Indah saat dia menumbuhkan kasih, dan Indah saat dia mempersatukan ptra putri kami dalam pernikahan kudus."</p>
+            <p><strong>SARY</strong><br> Putri ke-3 dari Bapak Lukas Nubat dan Ibu Anastasia Mimung</p>
+            <p><strong>JHONY</strong><br> Putra ke-4 dari Bapak Daniel Jagur dan Ibu Bergita Laus</p>
+            <button onclick="nextPage()">Lanjut</button>
+        </div>
+
+        <!-- Halaman 3 -->
+        <div class="page" id="page3">
+            <h2>Yang akan dilaksanakan pada:</h2>
+            <h3>PEMBERKATAN NIKAH</h3>
+            <p>Sabtu, 15 Februari 2025, pukul 10.00 WIB</p>
+            <p>Di Gereja Katolik St. Clemens Kendari</p>
+            <h3>RESEPSI</h3>
+            <p>Sabtu, 15 Februari 2025, pukul 11.00 WIB</p>
+            <p>Di Kediaman Mempelai Wanita.
+                JL. R Suprato, LR.Prona, Ponggolaka
+                (Kediaman Bpk. Ardi Ikun/ Bpk. Roy)</p>
+            <button onclick="nextPage()">Lanjut</button>
+        </div>
+
+        <!-- Halaman 4 -->
+        <div class="page" id="page4">
+            <h2>Ucapan Selamat & Kehadiran</h2>
+            <form id="rsvp-form">
+                <input type="text" id="name" placeholder="Nama Anda" required>
+                <textarea id="message" placeholder="Ucapan Selamat" required></textarea>
+                <button type="submit">Kirim</button>
+            </form>
+            <div id="rsvp-list"></div>
+            <button onclick="nextPage()">Lanjut</button>
+        </div>
+
+        <!-- Halaman 5 -->
+        <div class="page" id="page5">
+            <h2>Hadiah & Transfer</h2>
+            <p>BISA BAGIKAN HADIH BERUPA UANG</p>
+            <p>No. Rek: 1360026179(Patrisia Sari) "BNI"</p>
+            <a href="bri://open">Transfer BRI</a>
+            <a href="bca://open">Transfer BCA</a>
+            <a href="bni://open">Transfer BNI</a>
+            <p>Setelah transfer, screenshot bukti dan kirim ke:</p>
+            <a href="https://wa.me/6282297046668">WhatsApp</a>
+            <button onclick="nextPage()">Lanjut</button>
+        </div>
+
+        <!-- Halaman 6 -->
+        <div class="page" id="page6">
+            <h2>Konfirmasi Transfer</h2>
+            <form id="transfer-form">
+                <input type="text" id="transfer-name" placeholder="Nama Anda" required>
+                <input type="number" id="amount" placeholder="Nominal Transfer" required>
+                <button type="submit">Kirim</button>
+            </form>
+            <div id="transfer-list"></div>
+            <button onclick="firstPage()">Selesai</button>
+        </div>
+    </div>
+    <div class="butterfly"></div>
+    <div class="hearts"></div>
+    <div class="flowers"></div>
+    <div class="hearts-container"></div>
+
+    <script defer src="script.js"></script>
+</body>
+</html>
